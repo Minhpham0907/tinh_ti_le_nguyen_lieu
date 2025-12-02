@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Thức Tỉ Lệ Nguyên Liệu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🛠️ Tính Tỉ Lệ Nguyên Liệu</h1>
+
+        <div class="input-group">
+            <label for="material-select">Bạn đã có nguyên liệu gì?</label>
+            <select id="material-select">
+                <option value="" disabled selected>-- Chọn nguyên liệu --</option>
+                <option value="NaOH">NaOH</option>
+                <option value="dau an">Dầu ăn</option>
+                <option value="dau dua">Dầu dừa</option>
+                <option value="nuoc cat">Nước cất</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="mass-input">Nhập khối lượng nguyên liệu đã có (gam):</label>
+            <input type="number" id="mass-input" placeholder="Ví dụ: 100" min="0">
+        </div>
+
+        <button onclick="calculate()">Tính toán</button>
+
+        <div id="result" class="result-box">
+            </div>
+
+        <div class="note">
+            <p>*Tỉ lệ này được chuyển đổi từ logic C++ đã cung cấp. Hãy kiểm tra lại công thức hóa học trước khi sử dụng thực tế.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
